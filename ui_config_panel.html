@@ -1,0 +1,46 @@
+<!--
+[ConfigPanel / Research HUD]
+役割：
+- 再現性・安全性・検証のための設定UI
+- 普段は折りたたむ
+
+研究的意味：
+- 人が必ず介入できる設計
+- 説明責任を果たすための層
+-->
+
+<aside id="configPanel" class="collapsed">
+  <h3>Research / Advanced Settings</h3>
+
+  <label>
+    Camera Device
+    <select id="cameraDevice">
+      <option>Default</option>
+    </select>
+  </label>
+
+  <label>
+    Score Threshold
+    <input type="range" min="0" max="1" step="0.01" value="0.5">
+  </label>
+
+  <label>
+    Max Results
+    <input type="number" value="3" min="1" max="10">
+  </label>
+
+  <label>
+    Freeze Duration (ms)
+    <input type="number" value="800">
+  </label>
+
+  <label>
+    <input type="checkbox" id="debugToggle">
+    Debug HUD
+  </label>
+
+  <label>
+    <input type="checkbox" id="diyMode">
+    DIY Mode
+  </label>
+</aside>
