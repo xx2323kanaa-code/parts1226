@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #eee;
+  font-family: system-ui, sans-serif;
+}
+
+header.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #111;
+}
+
+.intent-buttons button,
+.action-controls button {
+  margin: 6px;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+#configPanel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  background: #111;
+  padding: 12px;
+}
+
+#configPanel.collapsed {
+  display: none;
+}
